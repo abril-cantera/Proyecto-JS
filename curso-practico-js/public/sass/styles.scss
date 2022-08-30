@@ -1,0 +1,99 @@
+@import "components/globales";
+@import "components/headers";
+@import "components/cards";
+@import "components/footers";
+
+.show {
+  text-align: center;
+  display: inherit !important;
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: $color__tenueOscuro solid 3px;
+}
+
+.normal {
+  background-color: transparent;
+}
+
+.careful {
+  background-color: orange;
+  color: white;
+}
+
+.danger {
+  background-color: red;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.garbage {
+  margin-left: 3px;
+  margin-bottom: -5px;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/icons/bin.png);
+}
+
+.text-center{
+text-align: center;
+}
+
+.container {
+  h1 {
+    font-size: 1.8rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  & > p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }
+  &__inf {
+    width: 100%;
+    margin: 5%;
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 3px 0px 5px $color__primario;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin: 1rem 0;
+      font-size: 1rem;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      text-shadow: 3px 0px 5px $color__primario;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// R E S P O N S I V E
+@media screen and (min-width:900px) {
+  .container {
+    &__inf {
+      img {
+        width: 60%;
+        margin: 0 20%;
+      }
+    }
+  }
+}

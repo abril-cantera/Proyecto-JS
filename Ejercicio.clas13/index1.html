@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos</title>
+</head>
+<body>
+    <h1>Cupones con descuento</h1>
+    <form action="">
+        <!-- Ingresa valor -->
+        <label for="precioIngresado">Ingrese el precio del producto:</label>
+        <input type="number" id="precioIngresado">
+        <!-- Slección de Cupones -->
+        <label for="">Seleccione su cupón:</label>
+        <select name="" id="valorCupon">
+            <option value="">Seleccione</option>
+            <option value="15">15%</option>
+            <option value="30">30%</option>
+            <option value="45">45%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+        </select>
+        <!-- Botón enviar -->
+        <button type="button" onclick="precioFinalCupones()">
+            Calcular precio final
+        </button>
+        <!-- Mostrar precio Final -->
+        <p id="mostrarPrecio"></p>
+    </form>
+    <script src="./index1.js"></script>
+</body>
+</html>

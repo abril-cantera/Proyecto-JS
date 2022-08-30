@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    height: 100vh;
+    font-family: 'Henny Penny', cursive;
+}
+
+.header-container {
+    height: auto;    
+    background-color: darksalmon;
+}
+.header-container h1 {
+    font-size: 1.7rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 500;
+}
+.header-container p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+/*MAIN*/
+
+
+.main-container {
+    height: auto;
+}
+.main-container div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.main-container div article {
+    height: auto;
+    width: 265px;
+    margin: 15px 10px;
+    text-align: center;
+    border:2px solid rgb(226, 140, 140);
+    border-radius: 5px;
+    background-color: darksalmon;
+    box-shadow: 1px -1px 19px 1px rgba(209,115,115,0.79);
+}
+
+
+.main-container div article a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-container div article img {
+    height: 100px;
+}
